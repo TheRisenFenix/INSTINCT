@@ -150,7 +150,7 @@ class WiFiPositioning : public Node
     std::vector<double> _deviceScale;
 
     /// Number of devices
-    size_t _numOfDevices;
+    size_t _numOfDevices = 0;
 
     /// @brief Device struct
     struct Device

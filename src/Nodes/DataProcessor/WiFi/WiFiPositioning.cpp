@@ -35,7 +35,7 @@ namespace nm = NAV::NodeManager;
 #include "Navigation/Math/LeastSquares.hpp"
 
 NAV::WiFiPositioning::WiFiPositioning()
-    : Node(typeStatic())
+    : Node(typeStatic()), _deviceMacAddresses(1), _devicePositions(1), _deviceBias(1), _deviceScale(1), _devices(1)
 {
     LOG_TRACE("{}: called", name);
 
